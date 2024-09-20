@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #e6e6fa; /* Lavender background color */
+    background-image: url('https://www.transparenttextures.com/patterns/paper.png'); /* Texture overlay */
+    background-blend-mode: overlay; /* Blend mode for texture */
+    background-size: cover; /* Ensure the texture covers the whole area */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.input-container {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white for contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-container input {
+    border: none;
+    outline: none;
+    padding: 12px;
+    margin-block: 12px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.input-container input[type="text"] {
+    width: 70%;
+    border: 2px solid #ff6f61; /* Colorful border */
+}
+
+.input-container input[type="button"] {
+    background-color: #ff6f61; /* Button background */
+    color: #fff;
+    font-weight: 700;
+    margin-left: 8px;
+    cursor: pointer;
+    padding: 12px 24px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.input-container input[type="button"]:hover {
+    background-color: #ff4d4d; /* Darker shade on hover */
+}
+
+ul {
+    width: 70%;
+    max-width: 450px;
+}
+
+ul li {
+    list-style-type: none;
+    cursor: pointer;
+    margin-block-end: 12px;
+    border-radius: 8px;
+    border: 2px solid #ffa500; /* Bright border color */
+    padding: 6px 12px;
+    background-color: #fff5e6; /* Light background color */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.5s, transform 0.2s;
+}
+
+ul li:hover {
+    background-color: #ffe6cc; /* Color change on hover */
+    transform: scale(1.02); /* Slight scale effect */
+}
+
+ul li p {
+    flex-grow: 1;
+    padding: 2px;
+    color: #333; /* Text color */
+}
+
+.btn {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: none;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.deleteBtn {
+    color: #ff0000; /* Red for delete */
+}
+
+.editBtn {
+    color: #008000; /* Green for edit */
+}
